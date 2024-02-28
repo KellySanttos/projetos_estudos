@@ -1,0 +1,98 @@
+ [   ContaBanco  ]
+ [---------------]
+ [  + numConta   ]
+ [    # tipo     ]
+ [   - titular   ]
+ [   - saldo     ]
+ [   - status    ]
+ [---------------]
+ [ + abrirConta()]
+ [+ fecharConta()]
+ [ + depositar() ]
+ [   + sacar()   ]
+ [+ pagarMensal()]
+
+Tarefa - 1 {FEITO}
+
+Regras:
+
+tipo - conta corrente ou conta poupança // cc - cp
+
+abrirConta() - 'status' muda para verdadeiro após a conta ser
+criada.
+# Se a conta estiver fechada, o 'status' será falso.
+# Especificar o 'tipo' de conta que será criado.
+# Se abrir conta corrente, o 'saldo' será acrescido em R$50.
+# Se abrir conta poupança, o 'saldo' será acrescido em R$150.
+
+fecharConta() - Para fechar a conta, o 'saldo' terá que ser R$0
+e não possuir dívida.
+
+depositar() - Para fazer depósito, o 'status' da conta deverá
+ser verdadeiro.
+
+sacar() - Para sacar dinheiro, o 'status' da conta deverá ser
+verdadeiro e possuir 'saldo'.
+
+pagarMensal() - Quando for chamado, terá que descontar um valor
+do 'saldo'.
+
+# Se o 'tipo' for cc, descontar R$12.
+# Se o 'tipo' for cp, descontar R$20.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Tarefa - 2
+
+Exercicio:
+Dado que temos uma classe "Banco" e um metodo "salvar", devemos receber uma lista de valores (1,2,2,2,3,4,5,6,7,7).
+O metodo salvar deve retornar uma nova lista, na qual nao devemos ter valores duplicados.
+Nesse exercicio devemos ter no minimo uma classe e um metodo, testes unitarios e nao podemos usar o "SetOf"
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Tarefa - 3 {FEITO}
+
+Exercicio:
+Você deverá alterar a classe 'ContaBanco' para ser abstrata.
+Você deverá criar as classes 'ContaCorrente' e 'ContaPoupanca' herdando da classe 'Conta'.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Tarefa - 4 {FEITO}
+
+Exercicio: (DESAFIO)
+Criar um simulador de caixa eletrônico.
+
+# O caixa eletrônico deverá possuir 2 contas correntes e 2 contas poupanças com titulares diferentes.
+# Deve ser possível realizar depósitos informando o número da conta.
+# Deve ser possível realizar saques informando o número da conta.
+# Deve ser possível verificar o saldo informando o número da conta.
+
+Testes:
+Saque
+Depósito
+Extrato
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Tarefa - 5
+
+Exercicio: (DESAFIO)
+Criar um login para acessar as operações do caixa eletrônico. Para efetuar o login, será necessário informar o número da
+conta e uma senha.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
